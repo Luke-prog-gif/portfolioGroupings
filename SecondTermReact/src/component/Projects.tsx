@@ -63,7 +63,7 @@ const projectsData: ProjectItem[] = [
     type: "Project",
     title: "Lab Analyzer",
     image: labAnalyzer,
-    year: 2024,
+    year: 2023 ,
     description:
       "A smart laboratory analysis system designed to simplify and speed up sample testing. It combines automated analysis with a user-friendly interface to help users obtain and understand laboratory results more efficiently.",
     tags: ["Python", "HTML", "JavaScript", "CSS"],
@@ -75,7 +75,7 @@ const projectsData: ProjectItem[] = [
     type: "Project",
     title: "Toffee Bean Website",
     image: toffeeBean,
-    year: 2024,
+    year: 2026,
     description:
       "ToffeeBean is a WordPress-based website developed for a client-owned café. The website showcases the café’s brand, menu, products, and offerings through a clean, user-friendly design, providing customers with an engaging online experience.",
     tags: ["WordPress"],
@@ -112,7 +112,7 @@ const projectsData: ProjectItem[] = [
     type: "Project",
     title: "Luke's Portfolio",
     image: lukePortfolio,
-    year: 2023,
+    year: 2026,
     description:
       "A personal portfolio website built with WordPress to showcase my skills, projects, experience, and professional background through a clean and responsive design.",
     tags: ["WordPress"],
@@ -125,7 +125,7 @@ const projectsData: ProjectItem[] = [
     type: "Project",
     title: "Jay's Portfolio",
     image: jayPortfolio,
-    year: 2023,
+    year: 2026,
     description:
       "A personal website built with WordPress and hosted through Hostinger. It showcases my projects, skills, and experience through a responsive and organized design.",
     tags: ["WordPress"],
@@ -137,7 +137,7 @@ const projectsData: ProjectItem[] = [
     type: "Project",
     title: "Ivory's Portfolio",
     image: ivoPortfolio,
-    year: 2023,
+    year: 2026,
     description:
       "A personal portfolio that showcases Ivory’s life skills, knowledge, experiences, and growth. It reflects what she has learned, the skills she has developed, and the journey that continues to shape who she is today.",
     tags: ["WordPress"],
@@ -149,7 +149,7 @@ const projectsData: ProjectItem[] = [
     type: "Course",
     title: "Ivory's Agile Essentials Certificate",
     image: ivoAgileCert,
-    year: 2023,
+    year: 2026,
     description:
       "Completed training focused on Agile principles, practices, and methodologies, including iterative development, collaboration, adaptability, and effective team workflows.",
     tags: ["Agile", "Scrum", "Project Management"],
@@ -161,7 +161,7 @@ const projectsData: ProjectItem[] = [
     type: "Course",
     title: "Jay's Agile Essentials Certificate",
     image: jayAgileCert,
-    year: 2023,
+    year: 2026,
     description:
       "Completed training focused on Agile principles, practices, and methodologies, including iterative development, collaboration, adaptability, and effective team workflows.",
     tags: ["Agile", "Scrum", "Project Management"],
@@ -173,7 +173,7 @@ const projectsData: ProjectItem[] = [
     type: "Course",
     title: "Luke's Agile Essentials Certificate",
     image: lukeAgileCert,
-    year: 2023,
+    year: 2026,
     description:
       "Completed training focused on Agile principles, practices, and methodologies, including iterative development, collaboration, adaptability, and effective team workflows.",
     tags: ["Agile", "Scrum", "Project Management"],
@@ -255,7 +255,7 @@ function Projects() {
       : projectsData.filter((item) => item.type === activeFilter);
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <div className="projects-section__container">
         <div className="projects-section__heading-row">
           <div>

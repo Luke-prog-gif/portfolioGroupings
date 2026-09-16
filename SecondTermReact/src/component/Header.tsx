@@ -9,7 +9,7 @@ function Header() {
         style={{ backgroundImage: `url(${TEAM})` }}
       ></div>
 
-      <section>
+      <section id="header">
         <div className="team-intro">
           <p className="team-label">COMBINED PORTFOLIO · 2025</p>
 
