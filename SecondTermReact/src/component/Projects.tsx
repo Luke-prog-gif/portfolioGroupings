@@ -2,7 +2,17 @@ import { useState } from "react";
 import "../Projects.css";
 import fishingGame from "../assets/img/fishingGame.jpg";
 import userManagementSystem from "../assets/img/userManagementSystem.png";
-
+import labAnalyzer from "../assets/img/LabAnalyzer.jpg";
+import toffeeBean from "../assets/img/toffeebean.png";
+import taskManagementSystem from "../assets/img/taskManagementSystem.png";
+import lukePortfolio from "../assets/img/lukePortfolio.png";
+import jayPortfolio from "../assets/img/jayPortfolio.png";
+import ivoPortfolio from "../assets/img/ivoPortfolio.png";
+import memoryAllocation from "../assets/img/memoryAllocation.png";
+import lukeAgileCert from "../assets/img/LukeAgileCert.png";
+import jayAgileCert from "../assets/img/jayAgileCert.jpg";
+import ivoAgileCert from "../assets/img/ivoAgileCert.jpg";
+  
 // ---------- Types ----------
 
 interface ProjectItem {
@@ -13,7 +23,6 @@ interface ProjectItem {
   description: string;
   tags: string[];
   author: string;
-  link: string;
   image:string;
 }
 
@@ -32,10 +41,10 @@ const projectsData: ProjectItem[] = [
     image: fishingGame,
     year: 2025,
     description:
-      "A full-stack analytics platform with live data streaming, customizable widgets, and role-based access control. Handles 50k+ events per second.",
+      "A 2D game where players catch and sell different fish to earn cash, with prices based on species, rarity, and weight. The goal is to get richer and collect various fish and rods.",
     tags: ["Java", "NetBeans", "Pixilart"],
     author: "Jay Dominguez & Ivory Mariano",
-    link: "#",
+    
   },
   {
     id: 2,
@@ -44,66 +53,141 @@ const projectsData: ProjectItem[] = [
     image: userManagementSystem,
     year: 2025,
     description:
-      "An accessible, themeable component library with 40+ components, Storybook docs, and full TypeScript support. Published on npm.",
-    tags: ["React", "TypeScript", "Storybook", "CSS"],
+      "It manages user information and access within a web application. It stores details such as user data, login credentials, and roles, allowing secure authentication and easy management of user accounts, including creating, updating, and deleting user records.",
+    tags: ["PHP", "HTML", "CSS", "JavaScript"],
     author: "Ivory Mariano",
-    link: "#",
+    
   },
   {
     id: 3,
     type: "Project",
-    title: "Kestrel — Kubernetes Deployment Automation",
-    image: fishingGame,
+    title: "Lab Analyzer",
+    image: labAnalyzer,
     year: 2024,
     description:
-      "A CLI tool that automates zero-downtime deployments to Kubernetes clusters with health checks, rollback support, and Slack notifications.",
-    tags: ["Python", "Docker", "Kubernetes", "AWS"],
-    author: "Sam Torres",
-    link: "#",
+      "A smart laboratory analysis system designed to simplify and speed up sample testing. It combines automated analysis with a user-friendly interface to help users obtain and understand laboratory results more efficiently.",
+    tags: ["Python", "HTML", "JavaScript", "CSS"],
+    author: "Jay Dominguez",
+    
   },
   {
     id: 4,
-    type: "Course",
-    title: "Advanced Algorithms & Data Structures",
-    image: fishingGame,
+    type: "Project",
+    title: "Toffee Bean Website",
+    image: toffeeBean,
     year: 2024,
     description:
-      "Graduate-level coursework covering graph algorithms, dynamic programming, and computational complexity theory.",
-    tags: ["Algorithms", "Java", "Theory"],
-    author: "Prof. Elena Marsh",
-    link: "#",
+      "ToffeeBean is a WordPress-based website developed for a client-owned café. The website showcases the café’s brand, menu, products, and offerings through a clean, user-friendly design, providing customers with an engaging online experience.",
+    tags: ["WordPress"],
+    author: "Jay, Ivory, & Luke",
+    
   },
   {
     id: 5,
-    type: "Course",
-    title: "Human-Computer Interaction",
-    image: fishingGame,
-    year: 2023,
+    type: "Project",
+    title: "Task Management System",
+    image: taskManagementSystem,
+    year: 2025,
     description:
-      "Principles of usability, accessibility, and interaction design, applied through iterative prototyping and user testing.",
-    tags: ["UX Research", "Figma", "Accessibility"],
-    author: "Prof. David Nkemelu",
-    link: "#",
+      "The Task Management System is a Java-based desktop application for IT students that organizes tasks by subject, due date, and priority, with subjects dynamically shown based on year level and supported by email notifications to improve time management.",
+    tags: ["Java", "NetBeans"],
+    author: "Luke Reyes",
+    
   },
   {
     id: 6,
-    type: "Course",
-    title: "Cloud Systems & Distributed Computing",
-    image: fishingGame,
+    type: "Project",
+    title: "Memory Allocation Visualizer",
+    image: memoryAllocation,
+    year: 2025,
+    description:
+      "A web-based tool that visualizes memory allocation using First Fit and Best Fit algorithms, helping users understand how memory management works.",
+    tags: ["JavaScript", "HTML", "CSS"],
+    author: "Jay, Ivory, & Luke",
+    
+  },
+
+   {
+    id: 7,
+    type: "Project",
+    title: "Luke's Portfolio",
+    image: lukePortfolio,
     year: 2023,
     description:
-      "Covers consensus protocols, replication, and fault tolerance, with hands-on labs deploying distributed services.",
-    tags: ["Distributed Systems", "Go", "gRPC"],
-    author: "Prof. Alicia Renn",
-    link: "#",
+      "A personal portfolio website built with WordPress to showcase my skills, projects, experience, and professional background through a clean and responsive design.",
+    tags: ["WordPress"],
+    author: "Luke Reyes",
+    
   },
+
+   {
+    id: 8,
+    type: "Project",
+    title: "Jay's Portfolio",
+    image: jayPortfolio,
+    year: 2023,
+    description:
+      "A personal website built with WordPress and hosted through Hostinger. It showcases my projects, skills, and experience through a responsive and organized design.",
+    tags: ["WordPress"],
+    author: "Jay Dominguez",
+    
+  },
+   {
+    id: 9,
+    type: "Project",
+    title: "Ivory's Portfolio",
+    image: ivoPortfolio,
+    year: 2023,
+    description:
+      "A personal portfolio that showcases Ivory’s life skills, knowledge, experiences, and growth. It reflects what she has learned, the skills she has developed, and the journey that continues to shape who she is today.",
+    tags: ["WordPress"],
+    author: "Ivory Mariano",
+    
+  },
+  {
+    id: 10,
+    type: "Course",
+    title: "Ivory's Agile Essentials Certificate",
+    image: ivoAgileCert,
+    year: 2023,
+    description:
+      "Completed training focused on Agile principles, practices, and methodologies, including iterative development, collaboration, adaptability, and effective team workflows.",
+    tags: ["Agile", "Scrum", "Project Management"],
+    author: "Ivory Mariano",
+    
+  },
+  {
+    id: 11,
+    type: "Course",
+    title: "Jay's Agile Essentials Certificate",
+    image: jayAgileCert,
+    year: 2023,
+    description:
+      "Completed training focused on Agile principles, practices, and methodologies, including iterative development, collaboration, adaptability, and effective team workflows.",
+    tags: ["Agile", "Scrum", "Project Management"],
+    author: "Jay Dominguez",
+    
+  },
+  {
+    id: 12,
+    type: "Course",
+    title: "Luke's Agile Essentials Certificate",
+    image: lukeAgileCert,
+    year: 2023,
+    description:
+      "Completed training focused on Agile principles, practices, and methodologies, including iterative development, collaboration, adaptability, and effective team workflows.",
+    tags: ["Agile", "Scrum", "Project Management"],
+    author: "Luke Reyes",
+    
+  },
+  
 ];
 
 // ---------- ProjectCard sub-component ----------
 // Pure presentational component — only reads from props, never from projectsData.
 
 function ProjectCard(props: ProjectItem) {
-  const { type, title, image, year, description, tags, author, link } = props;
+  const { type, title, image, year, description, tags, author } = props;
 
   return (
   <div className="project-card">
@@ -127,9 +211,6 @@ function ProjectCard(props: ProjectItem) {
 
     <div className="project-card__footer">
       <span className="project-card__author">{author}</span>
-      <a href={link} className="project-card__link">
-        View ↗
-      </a>
     </div>
   </div>
 );
