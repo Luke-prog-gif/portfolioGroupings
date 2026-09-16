@@ -1,5 +1,9 @@
 import "../assets/Footer.css";
 
+import fbIcon from "../assets/img/fb.webp";
+import phoneIcon from "../assets/img/phonee.png";
+import emailIcon from "../assets/img/email.webp";
+
 function Footer() {
   return (
     <footer className="footer">
@@ -7,7 +11,7 @@ function Footer() {
 
         <div className="footer-top">
 
-          <div className="footer-brand">
+          <div className="footer-brand" id="footer">
             <h2>Port hub</h2>
 
             <p>
@@ -15,34 +19,102 @@ function Footer() {
             </p>
           </div>
 
+
           <div className="footer-members">
 
             <div className="member">
-              <h4>Jay Florenz</h4>
-              <div className="member-links">
-                <a href="https://www.facebook.com/jay.florenz.dominguez">Facebook</a>
+
+              <div className="member-info">
+                <img src={fbIcon} alt="Facebook" />
+
+                <a
+                  href="https://www.facebook.com/jay.florenz.dominguez"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Jay Florenz Dominguez
+                </a>
               </div>
+
+              <div className="member-info">
+                <img src={phoneIcon} alt="Phone" />
+
+                <a>09661450061</a>
+              </div>
+
+              <div className="member-info">
+                <img src={emailIcon} alt="Email" />
+
+                <a>dominguez.jayflorenz@clsu2.edu.ph</a>
+              </div>
+
             </div>
 
-            <div className="member">
-              <h4>Jelaine Ivory</h4>
-              <div className="member-links">
-                <a href="https://www.facebook.com/share/1Ec69FDzRi/?mibextid=wwXIfr">Facebook</a>
-              </div>
-            </div>
 
             <div className="member">
-              <h4>Luke Gabriel</h4>
-              <div className="member-links">
-                <a href="https://www.facebook.com/luke.reyes.564/">Facebook</a>
+
+              <div className="member-info">
+                <img src={fbIcon} alt="Facebook" />
+
+                <a
+                  href="https://www.facebook.com/share/1Ec69FDzRi/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Jelaine Ivory Mariano
+                </a>
               </div>
+
+              <div className="member-info">
+                <img src={phoneIcon} alt="Phone" />
+
+                <a>09557710069</a>
+              </div>
+
+              <div className="member-info">
+                <img src={emailIcon} alt="Email" />
+
+                <a>mariano.jelaineivory@clsu2.edu.ph</a>
+              </div>
+
+            </div>
+
+
+            <div className="member">
+
+              <div className="member-info">
+                <img src={fbIcon} alt="Facebook" />
+
+                <a
+                  href="https://www.facebook.com/luke.reyes.564/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Luke Gabriel Reyes
+                </a>
+              </div>
+
+              <div className="member-info">
+                <img src={phoneIcon} alt="Phone" />
+
+                <a>09087928976</a>
+              </div>
+
+              <div className="member-info">
+                <img src={emailIcon} alt="Email" />
+
+                <a>reyes.lukegabriel@clsu2.edu.ph</a>
+              </div>
+
             </div>
 
           </div>
 
         </div>
 
+
         <div className="footer-divider"></div>
+
 
         <div className="footer-bottom">
 
@@ -50,7 +122,7 @@ function Footer() {
             © 2026 Port hub. All rights reserved.
           </p>
 
-          <a href="#overview" className="back-to-top">
+          <a href="#header" className="back-to-top">
             Back to top
           </a>
 
