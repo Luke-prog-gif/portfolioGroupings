@@ -1,0 +1,156 @@
+.skills-section {
+  background-color: #ffffff;
+  padding: 100px 52px;
+  box-sizing: border-box;
+}
+
+.skills-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* INTRO */
+
+.skills-intro {
+  max-width: 800px;
+}
+
+.skills-label {
+  color: #1f4895;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin: 0 0 25px;
+}
+
+.skills-intro h2 {
+  color: #0e2148;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 25px;
+}
+
+.skills-description {
+  color: #7184a6;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 700px;
+}
+
+/* SKILLS */
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 55px;
+  max-width: 1000px;
+}
+
+/* SKILL CARD */
+
+.skill-card {
+  padding: 13px 24px;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  border-radius: 30px;
+
+  transition: 0.2s ease;
+}
+
+/* FRONTEND */
+
+.skill-frontend {
+  background-color: #eef3fb;
+  color: #1f4895;
+  border: 1px solid #d7e1f1;
+}
+
+/* BACKEND */
+
+.skill-backend {
+  background-color: #f2f4f7;
+  color: #263b5d;
+  border: 1px solid #dce1e8;
+}
+
+/* DESIGN */
+
+.skill-design {
+  background-color: #f4f0fa;
+  color: #60458a;
+  border: 1px solid #e2d9ef;
+}
+
+/* TOOLS */
+
+.skill-tools {
+  background-color: #eef5f1;
+  color: #35654d;
+  border: 1px solid #d6e5dc;
+}
+
+/* HOVER */
+
+.skill-card:hover {
+  transform: translateY(-2px);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .skills-section {
+    padding: 80px 30px;
+  }
+
+  .skills-intro h2 {
+    font-size: 50px;
+  }
+
+  .skills-description {
+    font-size: 19px;
+  }
+
+  .skills-list {
+    margin-top: 45px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .skills-section {
+    padding: 65px 20px;
+  }
+
+  .skills-label {
+    font-size: 14px;
+  }
+
+  .skills-intro h2 {
+    font-size: 40px;
+  }
+
+  .skills-description {
+    font-size: 18px;
+  }
+
+  .skills-list {
+    gap: 10px;
+    margin-top: 35px;
+  }
+
+  .skill-card {
+    padding: 11px 18px;
+    font-size: 14px;
+  }
+}
