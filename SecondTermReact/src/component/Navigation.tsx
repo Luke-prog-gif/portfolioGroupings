@@ -6,7 +6,7 @@ function Navigation() {
       <div className="navigation-container">
 
         <a href="#overview" className="logo">
-          Port hub
+          L2J Portfolio
         </a>
 
         <div className="nav-links">

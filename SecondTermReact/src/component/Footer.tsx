@@ -12,7 +12,7 @@ function Footer() {
         <div className="footer-top">
 
           <div className="footer-brand" id="footer">
-            <h2>Port hub</h2>
+            <h2>L2J Portfolio</h2>
 
             <p>
               Three Minds, One Future
@@ -119,7 +119,7 @@ function Footer() {
         <div className="footer-bottom">
 
           <p>
-            © 2026 Port hub. All rights reserved.
+            © 2026 L2J Portfolio. All rights reserved.
           </p>
 
           <a href="#header" className="back-to-top">
