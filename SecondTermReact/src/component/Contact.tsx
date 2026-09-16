@@ -29,9 +29,7 @@ function Contact() {
           <h2>Let's work together</h2>
 
           <p className="contact-description">
-            Have a project in mind or want to collaborate? We'd love to
-            <br />
-            hear from you.
+            Have a project in mind or want to collaborate? We'd love to hear from you.
           </p>
         </div>
 
@@ -52,7 +50,7 @@ function Contact() {
             <div className="contact-info-item">
               <p className="info-label">AVAILABILITY</p>
               <p>We are open for opportunities and to work with you.</p>
-            </div><br></br><br></br>
+            </div>
 
             <div className="info-divider"></div>
 

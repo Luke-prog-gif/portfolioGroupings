@@ -16,6 +16,9 @@
   justify-content: space-between;
 }
 
+
+/* BRAND */
+
 .footer-brand h2 {
   margin: 0 0 10px;
 
@@ -35,44 +38,70 @@
   line-height: 1.5;
 }
 
+
+/* MEMBERS */
+
 .footer-members {
   display: flex;
   gap: 55px;
 }
 
 .member {
-  min-width: 150px;
-  text-align: center;
+  min-width: 230px;
 }
 
-.member h4 {
-  margin: 0 0 10px;
 
-  font-size: 15px;
-  font-weight: 600;
+/* MEMBER INFORMATION */
 
-  color: #10203f;
-}
-
-.member-links {
+.member-info {
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 12px;
 }
 
-.member-links a {
+.member-info img {
+  width: 17px;
+  height: 17px;
+
+  object-fit: contain;
+
+  opacity: 0.7;
+
+  flex-shrink: 0;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.member-info a {
   color: #70809b;
 
-  font-size: 14px;
+  font-size: 13px;
 
   text-decoration: none;
 
   transition: color 0.3s ease;
 }
 
-.member-links a:hover {
+.member-info a:hover {
   color: #214894;
 }
+
+.member-info a:hover + img {
+  opacity: 1;
+}
+
+.member-info:hover img {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+
+/* DIVIDER */
 
 .footer-divider {
   width: 100%;
@@ -82,6 +111,9 @@
 
   background-color: #e1e5ed;
 }
+
+
+/* BOTTOM */
 
 .footer-bottom {
   display: flex;
@@ -117,7 +149,11 @@
   background-color: #214894;
 }
 
+
+/* RESPONSIVE */
+
 @media (max-width: 900px) {
+
   .footer-container {
     padding: 50px 30px 40px;
   }
@@ -125,9 +161,18 @@
   .footer-members {
     gap: 30px;
   }
+
+  .member {
+    min-width: 190px;
+  }
+
+  .member-info a {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 700px) {
+
   .footer-top {
     flex-direction: column;
     gap: 40px;
@@ -137,13 +182,21 @@
     width: 100%;
     justify-content: space-between;
   }
+
+  .member {
+    min-width: 0;
+  }
 }
 
 @media (max-width: 500px) {
+
   .footer-members {
     flex-direction: column;
-    align-items: center;
     gap: 25px;
+  }
+
+  .member {
+    width: 100%;
   }
 
   .footer-bottom {

@@ -13,7 +13,7 @@ function Navigation() {
           <a href="#header">Overview</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#footer">Contact</a>
         </div>
 
         <a href="#contact" className="get-in-touch">
