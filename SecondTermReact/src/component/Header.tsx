@@ -11,7 +11,7 @@ function Header() {
 
       <section id="header">
         <div className="team-intro">
-          <p className="team-label">COMBINED PORTFOLIO · 2025</p>
+          <p className="team-label">COMBINED PORTFOLIO · 2026</p>
 
           <h2>Three minds, one vision.</h2>
 
@@ -29,7 +29,7 @@ function Header() {
 
                 document.getElementById("projects")?.scrollIntoView({
                   behavior: "smooth",
-                  block: "center",
+                  block: "start",
                 });
               }}
             >
