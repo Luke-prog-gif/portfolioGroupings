@@ -104,6 +104,13 @@
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+  border-color: #c7d2fe;
 }
 
 .project-card__badge {
