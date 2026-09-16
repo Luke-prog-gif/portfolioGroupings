@@ -14,8 +14,8 @@ import Footer from './component/Footer'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Header />
     <Navigation />
+    <Header />
     <Team />
     <Statistics />
     <Skills />
