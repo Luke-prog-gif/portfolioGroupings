@@ -25,8 +25,8 @@ function Team() {
           role="FRONTEND DEVELOPER"
           description="Focused on creating clean, responsive, and user-friendly interfaces."
           image={JIFM}
-          github="https://github.com/"
-          facebook="https://facebook.com/"
+          github="https://github.com/ivory19?fbclid=IwY2xjawUXaVBwZG9mA2V4dG4DYWVtAjExAHNydGMGYXBwX2lkATAAAR5vpsAtS3OD-okPH74pqlxhiaoncmlfHMbVhusHSs2x_eMfcSuNYQCbxiFF0Q_aem_TPSIFDZ6xN9DupV4v1csEQ"
+          facebook="https://www.facebook.com/jelaineivorymrn"
         />
 
         <TeamMemberCard
@@ -35,8 +35,8 @@ function Team() {
           role="FULL STACK DEVELOPER"
           description="Working with databases, backend systems, and reliable application logic."
           image={LGMR}
-          github="https://github.com/"
-          facebook="https://facebook.com/"
+          github="https://github.com/Luke-prog-gif?fbclid=IwY2xjawUXaQJwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMUNob1Q2bml4aVpHV2hQRVVzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeBGzBJDJPICea1yg5EUtqi37bbSQSwC67u15YctBG4eUw7FrQbGhDOZyvl-s_aem_UCOzFlxrX4LOTAEvNipp3A"
+          facebook="https://www.facebook.com/luke.reyes.564"
         />
 
       </div>

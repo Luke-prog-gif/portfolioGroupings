@@ -1,11 +1,17 @@
 import "../assets/Header.css";
+import TEAM from "../assets/img/TEAM.jpg";
 
 function Header() {
   return (
     <header className="team-header-section">
+      <div
+        className="team-header-background"
+        style={{ backgroundImage: `url(${TEAM})` }}
+      ></div>
+
       <section>
         <div className="team-intro">
-          <p className="team-label">MEET THE TEAM</p>
+          <p className="team-label">COMBINED PORTFOLIO · 2025</p>
 
           <h2>Three minds, one vision.</h2>
 
@@ -54,3 +60,4 @@ function Header() {
 }
 
 export default Header;
+
