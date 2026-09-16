@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../Projects.css";
-import fishingGame from "../assets/fishingGame.jpg";
-import userManagementSystem from "../assets/userManagementSystem.png";
+import fishingGame from "../assets/img/fishingGame.jpg";
+import userManagementSystem from "../assets/img/userManagementSystem.png";
 
 // ---------- Types ----------
 
@@ -40,13 +40,13 @@ const projectsData: ProjectItem[] = [
   {
     id: 2,
     type: "Project",
-    title: "Forma — Design System & Component Library",
+    title: "User Management System",
     image: userManagementSystem,
     year: 2025,
     description:
       "An accessible, themeable component library with 40+ components, Storybook docs, and full TypeScript support. Published on npm.",
     tags: ["React", "TypeScript", "Storybook", "CSS"],
-    author: "Jordan Kim",
+    author: "Ivory Mariano",
     link: "#",
   },
   {
