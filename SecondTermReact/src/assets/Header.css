@@ -1,0 +1,304 @@
+.team-header-section {
+  position: relative;
+  background-color: #ffffff;
+  padding: 110px 52px 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ========================================
+   TEAM BACKGROUND IMAGE
+======================================== */
+
+.team-header-background {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 55%;
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  pointer-events: none;
+}
+
+/* Fade the image into the white background */
+
+.team-header-background::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.85) 15%,
+    rgba(255, 255, 255, 0.25) 55%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* ========================================
+   HEADER CONTENT
+======================================== */
+
+.team-header-section section {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1740px;
+  margin: 0 auto;
+}
+
+.team-intro {
+  max-width: 900px;
+}
+
+/* ========================================
+   LABEL
+======================================== */
+
+.team-label {
+  color: #1f4895;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  letter-spacing: 3px;
+
+  margin: 0 0 35px;
+}
+
+/* ========================================
+   MAIN TITLE
+======================================== */
+
+.team-intro h2 {
+  color: #0e2148;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 72px;
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  margin: 0 0 35px;
+
+  max-width: 800px;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.team-description {
+  color: #7184a6;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 23px;
+
+  line-height: 1.6;
+
+  margin: 0;
+
+  max-width: 850px;
+}
+
+/* ========================================
+   HEADER BUTTONS
+======================================== */
+
+.team-header-buttons {
+  display: flex;
+
+  gap: 18px;
+
+  margin-top: 45px;
+}
+
+.header-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 28px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  transition: 0.2s ease;
+}
+
+/* ========================================
+   VIEW OUR WORK
+======================================== */
+
+.primary-button {
+  background-color: #123f91;
+  color: #ffffff;
+}
+
+.primary-button:hover {
+  background-color: #0e3275;
+}
+
+/* ========================================
+   MEET THE TEAM
+======================================== */
+
+.secondary-button {
+  background-color: transparent;
+
+  color: #123f91;
+
+  border: 1px solid #b9c4d8;
+}
+
+.secondary-button:hover {
+  background-color: #eef2f8;
+}
+
+/* ========================================
+   SCROLL TO EXPLORE
+======================================== */
+
+.scroll-text {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin: 75px 0 0;
+
+  color: #7184a6;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 3px;
+}
+
+.scroll-text::before {
+  content: "";
+
+  width: 55px;
+  height: 1px;
+
+  background-color: #c5ccd8;
+
+  display: block;
+
+  flex-shrink: 0;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+  .team-header-section {
+    padding: 80px 30px 60px;
+  }
+
+  .team-header-background {
+    width: 60%;
+
+    opacity: 0.09;
+  }
+
+  .team-intro h2 {
+    font-size: 58px;
+  }
+
+  .team-description {
+    font-size: 20px;
+  }
+
+  .team-header-buttons {
+    margin-top: 35px;
+  }
+
+  .scroll-text {
+    margin-top: 60px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .team-header-section {
+    padding: 60px 20px 50px;
+  }
+
+  .team-header-background {
+    width: 100%;
+
+    opacity: 0.07;
+  }
+
+  .team-header-background::after {
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .team-intro h2 {
+    font-size: 42px;
+  }
+
+  .team-label {
+    font-size: 14px;
+
+    margin-bottom: 25px;
+  }
+
+  .team-description {
+    font-size: 18px;
+  }
+
+  .team-header-buttons {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: 35px;
+  }
+
+  .header-button {
+    width: 100%;
+
+    max-width: 220px;
+
+    box-sizing: border-box;
+  }
+
+  .scroll-text {
+    margin-top: 50px;
+  }
+}
+
