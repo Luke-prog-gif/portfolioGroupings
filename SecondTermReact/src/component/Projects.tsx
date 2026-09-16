@@ -255,7 +255,7 @@ function Projects() {
       : projectsData.filter((item) => item.type === activeFilter);
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <div className="projects-section__container">
         <div className="projects-section__heading-row">
           <div>
