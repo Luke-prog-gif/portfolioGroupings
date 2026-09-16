@@ -1,35 +1,144 @@
+import { useState } from "react";
 import SkillCard from "./SkillCard";
 import "../assets/Skills.css";
 
 function Skills() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const skills = [
+    {
+      name: "React",
+      category: "Frontend",
+      members: "Jay · Ivory · Luke",
+      percentage: 92,
+    },
+    {
+      name: "Tailwind CSS",
+      category: "Frontend",
+      members: "Jay · Ivory · Luke",
+      percentage: 95,
+    },
+    {
+      name: "HTML",
+      category: "Frontend",
+      members: "Jay · Ivory · Luke",
+      percentage: 94,
+    },
+    {
+      name: "CSS",
+      category: "Frontend",
+      members: "Jay · Ivory · Luke",
+      percentage: 91,
+    },
+    {
+      name: "JavaScript",
+      category: "Frontend",
+      members: "Jay · Ivory · Luke",
+      percentage: 89,
+    },
+    {
+      name: "Java",
+      category: "Backend",
+      members: "Jay · Ivory · Luke",
+      percentage: 96,
+    },
+    {
+      name: "Node.js",
+      category: "Backend",
+      members: "Jay · Ivory · Luke",
+      percentage: 90,
+    },
+    {
+      name: "Python",
+      category: "Backend",
+      members: "Jay · Ivory · Luke",
+      percentage: 85,
+    },
+    {
+      name: "PHP",
+      category: "Backend",
+      members: "Jay · Ivory · Luke",
+      percentage: 88,
+    },
+    {
+      name: "C",
+      category: "Backend",
+      members: "Jay · Ivory · Luke",
+      percentage: 82,
+    },
+    {
+      name: "Figma",
+      category: "Design",
+      members: "Jay · Ivory · Luke",
+      percentage: 88,
+    },
+    {
+      name: "WordPress",
+      category: "Tools",
+      members: "Jay · Ivory · Luke",
+      percentage: 86,
+    },
+  ];
+
+  const categories = [
+    "All",
+    "Frontend",
+    "Backend",
+    "Design",
+    "Tools",
+  ];
+
+  const filteredSkills =
+    selectedCategory === "All"
+      ? skills
+      : skills.filter((skill) => skill.category === selectedCategory);
+
   return (
     <section className="skills-section" id="skills">
       <div className="skills-container">
 
-        <div className="skills-intro">
-          <p className="skills-label">WHAT WE WORK WITH</p>
+        <div className="skills-header">
+          <div className="skills-intro">
+            <p className="skills-label">OUR TOOLKIT</p>
 
-          <h2>Skills &amp; technologies.</h2>
+            <h2>Skills &amp; technologies.</h2>
 
-          <p className="skills-description">
-            A collection of technologies and tools we use to turn ideas
-            into functional digital experiences.
-          </p>
+            <p className="skills-description">
+              The tools and technologies we use to build thoughtful,
+              functional, and engaging digital experiences.
+            </p>
+          </div>
+
+          <div className="skills-count">
+            <strong>{filteredSkills.length}</strong>
+            <span>skills</span>
+          </div>
         </div>
 
-        <div className="skills-list">
-          <SkillCard name="HTML" type="frontend" />
-          <SkillCard name="CSS" type="frontend" />
-          <SkillCard name="JavaScript" type="frontend" />
-          <SkillCard name="React" type="frontend" />
+        <div className="skills-filters">
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`skill-filter ${
+                selectedCategory === category ? "active" : ""
+              }`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
 
-          <SkillCard name="PHP" type="backend" />
-          <SkillCard name="MySQL" type="backend" />
-          <SkillCard name="Java" type="backend" />
-
-          <SkillCard name="Figma" type="design" />
-          <SkillCard name="Git" type="tools" />
-          <SkillCard name="GitHub" type="tools" />
+        <div className="skills-grid">
+          {filteredSkills.map((skill) => (
+            <SkillCard
+              key={skill.name}
+              name={skill.name}
+              category={skill.category}
+              members={skill.members}
+              percentage={skill.percentage}
+            />
+          ))}
         </div>
 
       </div>
