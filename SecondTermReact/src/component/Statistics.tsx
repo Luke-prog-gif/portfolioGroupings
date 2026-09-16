@@ -11,7 +11,7 @@ function Statistics() {
         </div>
 
         <div className="stat-item">
-          <h3>18</h3>
+          <h3>12</h3>
           <p>Skills mastered</p>
         </div>
 
