@@ -15,7 +15,7 @@ function Footer() {
             <h2>L2J Portfolio</h2>
 
             <p>
-              Three Minds, One Future
+              Three minds, one vision.
             </p>
           </div>
 
